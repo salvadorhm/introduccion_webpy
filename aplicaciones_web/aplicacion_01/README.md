@@ -68,7 +68,7 @@ class Index:
 
 ## 6. Inicializar la aplicación
 
-Ejecuta el archivo directamente, e inicia el servidor web.
+Al ejecutar el archivo directamente con **python3 app.py** se llama al método run **app.run()** inicia el servidor web **Cherrypy**.
 
 ````python
 if __name__ == "__main__":
@@ -89,7 +89,7 @@ http://0.0.0.0:8080/
 
 Cuando se accede a la URL desde un navegador, el servidor web responde con el contenido de la página solicitada. En este caso, al acceder a la ruta raíz **/**, se recibe el mensaje **'Hola mundo HTML y Python!'**.
 
-NOTA: la respuesta del servidor **Cherrypy** es un texto plano, no es un HTML.
+NOTA: la respuesta del servidor [cherrypy](https://webpy.org/cookbook/ssl) es un texto plano, no es un HTML.
 
 ````shell
 127.0.0.1:51186 - - [29/May/2025 19:24:46] "HTTP/1.1 GET /" - 200 OK
@@ -98,5 +98,4 @@ NOTA: la respuesta del servidor **Cherrypy** es un texto plano, no es un HTML.
 ## 9. Detener el servidor
 
 Para detener el servidor, se puede utilizar la combinación de teclas **Ctrl + C** en la terminal donde se está ejecutando la aplicación. 
-
 
