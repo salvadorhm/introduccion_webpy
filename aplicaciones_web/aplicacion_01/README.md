@@ -33,11 +33,14 @@ import web
 
 El **framework web.py** utiliza el **path** o **ruta** para acceder a cada una de las páginas de la aplicación, está forma permite controlar el acceso a cada página, impidiendo acceder a páginas no listadas en la **urls**.
 
-La sintaxis para cada **ruta** es **punto de entrada** y la **clase** que controla las solicitudes y respouestas.
+La sintaxis para cada **ruta** es **punto de entrada** y la **clase** que controla las solirespouestascitudes y r
+
+
+**NOTA**: si en la ruta se indica la clase **Index** entonces debe existir la clase **class Index:** la cuál se invocará cuando se acceda a la ruta. 
 
 ````python
 urls = (
-    '/bienvenida', 'Index'
+    '/', 'Index'
 )
 ````
 
