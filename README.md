@@ -1,6 +1,4 @@
-# introduccion_webpy_ti31
-
-## Introducción a Web.py y Python
+# Introducción a Web.py y Python
 
 En este repositorio se muestran ejercicios para conocer el uso de web.py y HTML
 
@@ -93,3 +91,10 @@ Se realiza un **push** para subir los cambios realizados al repositorio de **Git
 ````shell
 git push -u origin main
 ````
+
+## 12. Lista de ejemplos
+
+|No.|Carpeta|Descripción|
+| -- | -- | -- |
+|1|aplicacion_01/|Ejemplo base de web.py|
+|2|aplicacion_02/|Ejemplo de uso de Templates html en web.py|
