@@ -16,8 +16,11 @@ render = web.template.render('templates')
 app = web.application(urls, globals())
 
 class Index:
+    def __init__(self):
+        self.message = "Hola desde python"
+
     def GET(self):
-        return render.index("Hola desde python")
+        return render.index(self.message)
 
 if __name__ == "__main__":
     app.run()
@@ -44,7 +47,7 @@ $def with(data)
 </html>
 ````
 
-## 5. Renderizado de los datos recibidos
+## 3. Renderizado de los datos recibidos
 
 Los datos se reciben mediante **$def with(data)**.
 
@@ -59,10 +62,10 @@ Se utiliza el simbolo **$** acompañado de la variable **data** para renderizar 
 
 ## 4. Renderizado de index.html enviando datos
 
-Al igual que en ejemplo anterior se renderiza la página **index.html**, en este caso dentro de los parentesís **("Hola desde python")** se esta enviando al archivo un **objeto** de tipo **str**.
+Al igual que en ejemplo anterior se renderiza la página **index.html**, en este caso dentro de los parentesís **(self.message)** se esta enviando al archivo un **objeto** de tipo **str**.
 
 **NOTA**: Tomando la base de la programación orientada a objetos en la que todo es un **objeto** se prodrá enviar cualquier tipo de datos **str**, **int**, **bool**, **float**, **dict**, **list**, etc.
 
 ````python
-return render.index("Hola desde python")
+return render.index(self.message)
 ````

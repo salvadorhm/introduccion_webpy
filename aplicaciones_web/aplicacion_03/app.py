@@ -7,8 +7,11 @@ render = web.template.render('templates')
 app = web.application(urls, globals())
 
 class Index:
+    def __init__(self):
+        self.message = "Hola desde python"
+
     def GET(self):
-        return render.index("Hola desde python")
+        return render.index(self.message)
 
 if __name__ == "__main__":
     app.run()
