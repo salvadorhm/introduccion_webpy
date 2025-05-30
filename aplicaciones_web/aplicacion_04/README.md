@@ -1,12 +1,12 @@
-# 3. Templates html y lista de datos
+# 4. Uso de templates HTML y listas de datos en web.py
 
-## 1. Ejemplo de templates y lista de datos
+## 1. Ejemplo: Templates y envío de datos
 
-El siguiente código muestra el uso de templates **HTML** y datos enviados a los archivos desde python [web.py Templator](https://webpy.org/docs/0.3/templetor).
+El siguiente ejemplo muestra cómo utilizar templates **HTML** y enviar datos desde Python usando [web.py Templator](https://webpy.org/docs/0.3/templetor).
 
-Este ejemplo muestra la forma de desarrollar 2 paginas web (**index.html** y **clientes.html**) con sus respectivas clases (**Index** y **Clientes**).
+Se desarrollan dos páginas web (**index.html** y **clientes.html**) y sus respectivas clases (**Index** y **Clientes**).
 
-````python
+```python
 import web
 
 urls = (
@@ -17,41 +17,34 @@ render = web.template.render('templates')
 app = web.application(urls, globals())
 
 class Index:
-
     def __init__(self):
         self.message = "Página de inicio"
-
 
     def GET(self):
         return render.index(self.message)
 
-
 class Clientes:
-
     def __init__(self):
         self.nombres_clientes = ["Dejah Thoris", "John Carter", "Carthoris", "Tars Tarkas"]
-
 
     def GET(self):
         return render.clientes(self.nombres_clientes)
 
-
 if __name__ == "__main__":
     app.run()
-````
+```
 
-## 2. Páginas web
+## 2. Páginas web y templates
 
-Este ejemplo contiene dos paginas web **index.html** y **clientes.html**.
+Este ejemplo contiene dos páginas web: **index.html** y **clientes.html**.
 
 ### 2.1 index.html
 
-Está página es una extensión del ejemplo anterior, como primer línea se utiliza **$def with(message)** lo que permite recibir cualquier tipo de objeto enviado desde **python** con **web.py**.
+Esta página utiliza **$def with(message)** en la primera línea, lo que permite recibir cualquier objeto enviado desde Python con **web.py**.
 
-**NOTA**: El objeto **message** puede tener cualquier nombre.
+> **Nota:** El nombre de la variable (`message`) puede ser cualquiera, se recomienda que coincida con el parámetro enviado desde Python.
 
-
-````html
+```html
 $def with(message)
 <!DOCTYPE html>
 <html lang="es">
@@ -65,13 +58,13 @@ $def with(message)
         <a href="/clientes">Ver clientes</a>
     </body>
 </html>
-````
+```
 
 ### 2.2 clientes.html
 
-Tal cómo se menciono anteriormente **$def with(nombres)** puede recibir casi cualquier tipo de objeto, en este caso recibe una lista con 4 elementos.
+De forma similar, **$def with(nombres)** permite recibir una lista de nombres desde Python.
 
-````html
+```html
 $def with(nombres)
 <!DOCTYPE html>
 <html lang="es">
@@ -89,45 +82,46 @@ $def with(nombres)
         </ul>
     </body>
 </html>
-````
+```
 
-Para mostrar cada uno de los valores recibidos se utiliza un **bucle for**, tal como se haría en una aplicación de consola.
+Para mostrar cada valor recibido, se utiliza un **bucle for** dentro del template, igual que en una aplicación de consola. Así, se combinan etiquetas **HTML** y **código Python** para mostrar los datos en una lista no numerada:
 
-Aquí se puede apreciar cómo se estan utilizando etiquetas de **html** y **código de python** para mostrar cada valor recibido en una lista NO numerada  tal como se muestra en el ejemplo de abajo.
-
-````python
+```python
 <ul>
     $for nombre in nombres:
         <li>${nombre}</li>
 </ul>
-````
+```
 
-## 3. Renderizado de paginas recibiendo datos
+## 3. Renderizado de páginas recibiendo datos
 
-En el caso de **index** se esta enviando una variable global **self.message** que contiene un str.
+En el caso de **index**, se envía una variable global `self.message` (tipo `str`) al template:
 
-````python
+```python
 class Index:
-
     def __init__(self):
         self.message = "Página de inicio"
 
-
     def GET(self):
         return render.index(self.message)
-````
+```
 
-En el caso de **clientes** se esta enviando una variable global **self.nombre_clientes** que contiene una lista de nombres.
+En el caso de **clientes**, se envía una lista de nombres a través de la variable global `self.nombres_clientes`:
 
-**NOTA**: el proceso para enviar los datos a las paginas html en ambos casos es el mismo, es decir se agregan como un parámetro dentro de los paréntisis.
-
-````python
+```python
 class Clientes:
-
     def __init__(self):
         self.nombres_clientes = ["Dejah Thoris", "John Carter", "Carthoris", "Tars Tarkas"]
 
-
     def GET(self):
         return render.clientes(self.nombres_clientes)
-````
+```
+
+> **Nota:** El proceso para enviar datos a los templates HTML es el mismo en ambos casos: se pasan como argumentos al llamar al template desde Python.
+
+---
+
+**Recomendaciones:**
+- Usa nombres de variables descriptivos y consistentes entre Python y los templates.
+- Separa claramente el código Python y el HTML para facilitar el mantenimiento.
+- Agrega comentarios en el código para explicar la lógica principal.

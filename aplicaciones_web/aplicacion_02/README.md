@@ -1,4 +1,4 @@
-# Templates
+# 2. Templates
 
 ## 1. Ejemplo de templates
 

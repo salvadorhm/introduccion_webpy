@@ -1,10 +1,10 @@
 # Introducción a Web.py y Python
 
-En este repositorio se muestran ejercicios para conocer el uso de web.py y HTML
+Este repositorio contiene ejercicios prácticos para aprender el uso de web.py y la integración de HTML en aplicaciones Python.
 
 ## 1. Crear el archivo **.gitignore**
 
-Se crea el archivo **.gitinore** para configurar los archivos que no se sincronizarán con el repositorio
+Crea el archivo **.gitignore** para especificar los archivos y carpetas que no deben sincronizarse con el repositorio.
 
 ````shell
 *.pyc
@@ -12,41 +12,41 @@ __pycache__/
 .venv/
 ````
 
-## 2. Crear el **virtual environment**
+## 2. Crear el entorno virtual (**virtual environment**)
 
-Se crea el ambiente virtual de trabajo de python
+Crea un entorno virtual de Python para aislar las dependencias del proyecto.
 
 ````shell
 python3 -m venv .venv
 ````
 
-## 3. Iniciar el **virtual environment**
+## 3. Activar el entorno virtual
 
-Se activa el **virtual environment** para instalar las librerías necesarias para el proyecto.
+Activa el entorno virtual para instalar las librerías necesarias para el proyecto.
 
 ````shell
 source .venv/bin/activate
 ````
 
-## 4. Actualizar **pip** dentro del **virtual environment**
+## 4. Actualizar **pip** dentro del entorno virtual
 
-Se actualiza la versión instalada de **pip** para poder descargar las últimas versiones de las librerías.
+Actualiza la versión de **pip** para poder instalar las últimas versiones de las librerías.
 
 ````shell
 pip install --upgrade pip
 ````
 
-## 5. Verficar las librerías instaladas
+## 5. Verificar las librerías instaladas
 
-Se verica que librerías y versiones se tienen instaladas.
+Verifica qué librerías y versiones tienes instaladas en el entorno virtual.
 
 ````shell
 pip freeze
 ````
 
-## 6. Instalar librerías
+## 6. Instalar librerías necesarias
 
-Se instalan las librerías que se van a ocupar en el proyecto.
+Instala las librerías requeridas para el proyecto. Por ejemplo, para este repositorio:
 
 ````shell
 pip install web.py
@@ -54,7 +54,7 @@ pip install web.py
 
 ## 7. Crear el archivo **requirements.txt**
 
-Se crea el archivo **requirements.txt** con las liberías y el número de versión utilizadas.
+Genera el archivo **requirements.txt** con las librerías y versiones utilizadas en el proyecto.
 
 ````shell
 pip freeze > requirements.txt
@@ -62,7 +62,7 @@ pip freeze > requirements.txt
 
 ## 8. Crear el archivo **runtime.txt**
 
-Se crea el arvhivo **runtime.txt** con la versión de Python3 que se está utilizando en el proyecto.
+Crea el archivo **runtime.txt** con la versión de Python utilizada en el proyecto.
 
 ````shell
 python3 -V > runtime.txt
@@ -70,7 +70,7 @@ python3 -V > runtime.txt
 
 ## 9. Indexar los archivos creados con **git**
 
-Se indexan los archivos y cambios realizados en el proyecto
+Agrega los archivos y cambios realizados al control de versiones con **git**.
 
 ````shell
 git add .
@@ -78,7 +78,7 @@ git add .
 
 ## 10. Generar un **commit**
 
-Se realiza un **commit** con un texto que describa los cambios realizados en el proyecto
+Realiza un **commit** con un mensaje descriptivo sobre los cambios realizados.
 
 ````shell
 git commit -m "CREATED configuracion basica"
@@ -86,10 +86,17 @@ git commit -m "CREATED configuracion basica"
 
 ## 11. Realizar un **push** 
 
-Se realiza un **push** para subir los cambios realizados al repositorio de **GitHub**
+Sube los cambios realizados al repositorio de **GitHub**.
 
 ````shell
 git push -u origin main
 ````
+
+---
+
+**Notas y recomendaciones:**
+- Asegúrate de activar el entorno virtual cada vez que trabajes en el proyecto.
+- El archivo **.gitignore** es fundamental para evitar subir archivos innecesarios o sensibles.
+- Utiliza mensajes de commit claros y descriptivos para facilitar el seguimiento de los cambios.
 
 
