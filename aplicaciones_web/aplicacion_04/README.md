@@ -93,7 +93,7 @@ $def with(nombres)
 
 Para mostrar cada uno de los valores recibidos se utiliza un **bucle for**, tal como se haría en una aplicación de consola.
 
-Aquí se puede apreciar cómo se estan utilizando etiquetas de **html** y **código de python** para mostrar cada valor recibido en una lista NO numerada **<ul>**.
+Aquí se puede apreciar cómo se estan utilizando etiquetas de **html** y **código de python** para mostrar cada valor recibido en una lista NO numerada  tal como se muestra en el ejemplo de abajo.
 
 ````python
 <ul>
