@@ -25,6 +25,8 @@ if __name__ == "__main__":
     app.run()
 ````
 
+
+
 ## 2. Configuración de los Templates
 
 Para utilizar archivos **HTML** como respuesta a las peticiones se creará un objeto de tipo **web.template.render**, esto permitirá definir una **carpeta** en la que se almacenarán los archivos **HTML** y desdé donde se llamarán para ser renderizadas.
@@ -63,3 +65,15 @@ NOTA: **index()** corresponde al archivo **index.html**, si el archivo tuviera e
 ````python
 return render.index()
 ````
+
+En la Imgagen 1 se muestra la aplicación desplegada.
+
+![HTML renderizado](screenshot00.png)
+
+Imagen1: Captura de pantalla de la app en ejecución.
+
+En la Imagen 2 se muestra el **source code** de la página desplegada, y cómo se puede apreciar es el archivo **html** renderizado.
+
+![Hola mundo](screenshot01.png)
+
+Imagen2: Captura de pantalla del codigo fuente del html.

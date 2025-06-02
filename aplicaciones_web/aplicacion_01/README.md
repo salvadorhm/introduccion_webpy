@@ -21,6 +21,8 @@ if __name__ == "__main__":
     app.run()
 ````
 
+
+
 ## 2. Librerias
 
 Cuando se importo la librería **web.py** utilizando **pip install web.py** se instalo el **framework**, y ahora ya se puede utilizar para desarrollar aplicaciones web.
@@ -97,6 +99,12 @@ NOTA: la respuesta del servidor [cherrypy](https://webpy.org/cookbook/ssl) es un
 ````shell
 127.0.0.1:51186 - - [29/May/2025 19:24:46] "HTTP/1.1 GET /" - 200 OK
 ````
+
+En la Imgagen 1 se muestra la aplicación desplegada.
+
+![Hola mundo](screenshot.png)
+
+Imagen1: Captura de pantalla de la app en ejecución.
 
 ## 9. Detener el servidor
 

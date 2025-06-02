@@ -119,6 +119,31 @@ class Clientes:
 
 > **Nota:** El proceso para enviar datos a los templates HTML es el mismo en ambos casos: se pasan como argumentos al llamar al template desde Python.
 
+
+En la Imgagen 1 se muestra la aplicación desplegada mostrando el index.
+
+![HTML renderizado](screenshot00.png)
+
+Imagen 1: Captura de pantalla de la app en ejecución.
+
+En la Imagen 2 se muestra el **source code** de la página desplegada, y cómo se puede apreciar es el archivo **html** renderizado **index.html**.
+
+![Hola mundo](screenshot01.png)
+
+Imagen 2: Captura de pantalla del codigo fuente de index.html.
+
+
+En la Imagen 3 se muestra la pagina **clientes**.
+
+![HTML renderizado](screenshot02.png)
+
+Imagen 3: Captura de pantalla de la pagina **clientes**.
+
+En la Imagen 4 se muestra el **source code** de la página **clientes.html**, cómo se puede apreciar el bucle de python que recorre el array recibido genero texto en formato html
+
+![Hola mundo](screenshot03.png)
+
+Imagen 4: Captura de pantalla del codigo fuente de **clientes.html**
 ---
 
 **Recomendaciones:**
