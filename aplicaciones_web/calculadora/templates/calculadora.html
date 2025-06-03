@@ -1,0 +1,26 @@
+$def with(resultado=0)
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <h1>Calculadora en web.py</h1>
+
+        <form method="POST">
+            <label for="inp_numero1">Número 1:</label><br>
+            <input type="number" name="inp_numero1" id="inp_numero1" required value=0><br>
+
+            <label for="inp_numero2">Número 2:</label><br>
+            <input type="number" name="inp_numero2" id="inp_numero2" required value=0><br>
+
+            <label for="inp_resultado">Resultado:</label><br>
+            <input type="number" name="inp_resultado" id="inp_resultado" readonly value=$resultado><br>
+            
+            <button type="submit" name="btn_operacion" value="suma">Calcular</button>
+        </form>
+
+    </body>
+</html>
