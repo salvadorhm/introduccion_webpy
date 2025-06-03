@@ -70,13 +70,13 @@ Al igual que en ejemplo anterior se renderiza la página **index.html**, en este
 return render.index(self.message)
 ````
 
-En la Imgagen 1 se muestra la aplicación desplegada.
+En la **Imagen 1** se muestra la aplicación desplegada.
 
 ![HTML renderizado](screenshot00.png)
 
 Imagen1: Captura de pantalla de la app en ejecución.
 
-En la Imagen 2 se muestra el **source code** de la página desplegada, y cómo se puede apreciar es el archivo **html** renderizado incluyendo el valor de **$data**:**"Hola desde python"**.
+En la **Imagen 2** se muestra el **source code** de la página desplegada, y cómo se puede apreciar es el archivo **html** renderizado incluyendo el valor de **$data**:**"Hola desde python"**.
 
 ![Hola mundo](screenshot01.png)
 

@@ -77,6 +77,13 @@ En este ejemplo se muestra el renderizado enviando una variable.
 return render.index(self.message)
 ```
 
+En la **Imagen 1** se muestra la aplicación desplegada mostrando el mensaje enviado desde el index.
+
+![HTML renderizado](screenshot00.png)
+
+Imagen 1: Captura de pantalla de la app en ejecución.
+
+
 ### 4.2 Renderizado sin valores
 
 En este ejemplo se muestra el renderizado sin enviar valores, esto hará que el archivo **html** le asigne un valor prederminado a la variable.
@@ -84,3 +91,9 @@ En este ejemplo se muestra el renderizado sin enviar valores, esto hará que el 
 ```python
 return render.index()
 ```
+
+En la **Imagen 2** se muestra la aplicación desplegada mostrando el mensaje predefinido desde el template index.html.
+
+![HTML renderizado](screenshot01.png)
+
+Imagen 2: Captura de pantalla de la app en ejecución.

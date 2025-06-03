@@ -100,7 +100,7 @@ NOTA: la respuesta del servidor [cherrypy](https://webpy.org/cookbook/ssl) es un
 127.0.0.1:51186 - - [29/May/2025 19:24:46] "HTTP/1.1 GET /" - 200 OK
 ````
 
-En la Imgagen 1 se muestra la aplicación desplegada.
+En la **Imagen 1** se muestra la aplicación desplegada.
 
 ![Hola mundo](screenshot.png)
 
