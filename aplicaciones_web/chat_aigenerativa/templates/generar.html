@@ -1,0 +1,27 @@
+$def with(response="")
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ollama</title>
+</head>
+
+<body>
+    <h1>Ollama y Web.py</h1>
+
+    <form method="POST">
+        <label for="prompt">Prompt:</label><br>
+        <input type="text" id="prompt" name="prompt">
+
+        <button type="submit"  id="generate" name="generate">Generate</button><br>
+
+        <label for="response">Response:</label><br>
+        <textarea  id="response" name="response" rows="3">$response</textarea>
+
+    </form>
+    </div>
+</body>
+
+</html>

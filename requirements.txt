@@ -1,4 +1,9 @@
+certifi==2025.4.26
+charset-normalizer==3.4.2
 cheroot==10.0.1
+idna==3.10
 jaraco.functools==4.1.0
 more-itertools==10.7.0
+requests==2.32.4
+urllib3==2.4.0
 web.py==0.62
