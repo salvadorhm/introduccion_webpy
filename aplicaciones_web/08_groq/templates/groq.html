@@ -1,0 +1,21 @@
+$def with(response="")
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hola mundo Web.py</title>
+</head>
+<body>
+    <h1>Hola mundo Web.py</h1>
+    <form method="POST" action="/">
+        <label for="prompt">Escribe un prompt:</label>
+        <input type="text" id="prompt" name="prompt" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="response">
+        <h2>Respuesta:</h2>
+        <pre>${response}</pre>
+    </div>
+</body>
+</html>
